@@ -24,7 +24,8 @@ export default function Navbar() {
                </div>
                <div className={`md:flex gap-14 
                     ${isOpen ? 'flex bg-white items-center justify-center z-20 h-screen top-12 left-0' : 'hidden '} 
-                    flex-col md:flex-row items-center w-full md:w-auto md:h-auto absolute md:static md:top-0`}>
+                    flex-col md:flex-row items-center w-full md:w-auto md:h-auto absolute md:static md:top-0`}
+               >
                     <Link href="#" onClick={(() => setIsOpen(false))}>
                          <span className="text-gray hover:text-black transition ease-in-out duration-500 px-4 py-2 md:px-0">Inicio</span>
                     </Link>
