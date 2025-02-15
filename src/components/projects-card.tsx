@@ -1,3 +1,4 @@
+import { ArrowRight, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,7 +25,7 @@ export default function ProjectCard({
                          className="rounded"
                     />
                </div>
-               <div className="md:w-1/2">
+               <div className="md:w-1/2 text-sm md:text-base">
                     <p className="font-medium uppercase">{title}</p>
                     <div className="mt-3">
                          <p className="text-sm">{description}</p>
@@ -33,9 +34,15 @@ export default function ProjectCard({
                          <span className="font-semibold">Stack: </span>
                          <p className="text-sm text-gray">{stack}</p>
                     </div>
-                    <div className="mt-3 flex gap-10">
-                         <Link href={deploy} className="text-sm border px-5 py-2 rounded hover:bg-black hover:text-white transition-all duration-200">Deploy</Link>
-                         <Link href={repository} className="text-sm border px-5 py-2 rounded hover:bg-black hover:text-white transition-all duration-200">Repositório</Link>
+                    <div className="mt-3 flex gap-10 md:flex-row flex-col">
+                         <Link target="_blank" href={deploy} className="text-sm border uppercase justify-center px-12 py-2 flex gap-4 items-center hover:bg-black hover:text-white transition-all duration-200">
+                              Deploy
+                              <MoveRight size={36} strokeWidth={1.5} />
+                         </Link>
+                         <Link target="_blank" href={repository} className="text-sm border uppercase justify-center px-12 py-2 flex gap-4 items-center hover:bg-black hover:text-white transition-all duration-200">
+                              Repositório
+                              <MoveRight size={36} strokeWidth={1.5} />
+                         </Link>
                     </div>
                </div>
           </div>

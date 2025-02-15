@@ -2,11 +2,11 @@
 
 import { motion } from "motion/react";
 import About from "@/components/about";
-import Contacts from "@/components/contacts";
 import Experience from "@/components/experience";
 import { MoveDown, MoveUp } from "lucide-react";
 import { useEffect, useState } from "react";
 import Projects from "@/components/projects";
+import Footer from "@/components/footer";
 
 export default function Home() {
      const [isAtBottom, setIsAtBottom] = useState(false);
@@ -17,7 +17,7 @@ export default function Home() {
           if (lastSection) {
                const rect = lastSection.getBoundingClientRect();
                setIsAtBottom(rect.bottom <= window.innerHeight);
-          }
+          };
      };
 
      useEffect(() => {
@@ -51,7 +51,7 @@ export default function Home() {
      return (
           <>
                <motion.div
-                    className="md:p-10 p-5 h-screen border-b border-zinc-300"
+                    className="h-[calc(100vh-200px)] border-b border-zinc-300"
                     id="about"
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -62,7 +62,7 @@ export default function Home() {
                </motion.div>
 
                <motion.div
-                    className="md:p-10 p-5 border-b border-zinc-300"
+                    className="min-h-100 border-b border-zinc-300"
                     id="experience"
                     initial={{ opacity: 0, x: 0 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -73,7 +73,7 @@ export default function Home() {
                </motion.div>
 
                <motion.div
-                    className="md:p-10 p-5 border-b border-zinc-300"
+                    className="min-h-100 md:p-10 p-5 border-b border-zinc-300"
                     id="projects"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -91,7 +91,7 @@ export default function Home() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.8 }}
                >
-                    <Contacts />
+                    <Footer />
                </motion.div>
 
                <div className="absolute z-10">

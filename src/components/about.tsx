@@ -11,11 +11,12 @@ export default function About() {
                     <div className="flex flex-col items-center mb-5 md:mb-0 md:items-start">
                          <div>
                               <p className="text-2xl font-medium text-center md:text-start">Meu nome é,</p>
-                              <span className="text-4xl">Gabriel Fulaneto!</span>
+                              <span className="md:text-5xl text-4xl">Gabriel Fulaneto!</span>
                          </div>
                          <div className="w-2/3 mt-1">
-                              <p className="text-sm text-gray md:text-start text-center">Sou Desenvolvedor FullStack com 1 ano de experiência profissional focado no desenvolvimento de
-                              APIs e interfaces administrativas usando TypeScript, React, Next e Nest JS.</p>
+                              <p className="text-sm text-gray md:text-start text-center">
+                                   Sou Desenvolvedor FullStack com 1 ano de experiência profissional focado no desenvolvimento de APIs e interfaces modernas.
+                              </p>
                          </div>
                          <div className="flex gap-5 items-center mt-5">
                               <motion.div
@@ -62,13 +63,13 @@ export default function About() {
                         
                     </div>
                </div>
-               <div>
+               <div className="hover:mix-blend-normal">
                     <Image 
                          src={'/images/personal-image.jpeg'}
-                         width={300}
-                         height={300}
+                         width={400}
+                         height={400}
                          alt="Profile Image"
-                         className="rounded"
+                         className="rounded-2xl"
                     />  
                </div>
           </div>
