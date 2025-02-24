@@ -62,7 +62,7 @@ export default function Home() {
                </motion.div>
 
                <motion.div
-                    className="min-h-100 border-b border-zinc-300"
+                    className="border-b border-zinc-300"
                     id="experience"
                     initial={{ opacity: 0, x: 0 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -73,7 +73,7 @@ export default function Home() {
                </motion.div>
 
                <motion.div
-                    className="min-h-100 md:p-10 p-5 border-b border-zinc-300"
+                    className="md:p-10 p-5 border-b border-zinc-300"
                     id="projects"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
