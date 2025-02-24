@@ -51,7 +51,7 @@ export default function Home() {
      return (
           <>
                <motion.div
-                    className="h-[calc(100vh-200px)] border-b border-zinc-300"
+                    className="min-h-100 border-b border-zinc-300"
                     id="about"
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}

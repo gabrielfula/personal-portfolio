@@ -63,7 +63,7 @@ export default function About() {
                         
                     </div>
                </div>
-               <div className="hover:mix-blend-normal">
+               <div className="hover:mix-blend-normal px-5 md:px-0">
                     <Image 
                          src={'/images/personal-image.jpeg'}
                          width={400}

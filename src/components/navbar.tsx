@@ -14,7 +14,7 @@ export default function Navbar() {
     };
 
     return (
-            <nav className="p-5 mb-20 md:p-10 md:px-16">
+            <nav className="p-5 md:p-10 md:px-16">
                 <div className="flex items-center justify-between">
                     <div>
                         <p className="text-2xl font-bold tracking-wide">{"<"} Fula {"/>"}</p>
