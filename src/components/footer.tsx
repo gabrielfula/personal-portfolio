@@ -10,7 +10,7 @@ export default function Footer() {
                               <div>
                                    <Link href="https://wa.me/5519987319069?text=Ol%C3%A1%2C+visualizei+seu+portf%C3%B3lio.+Gostaria+de+entrar+em+contato+%21"
                                    target={"_blank"}
-                                   className="text-lg flex gap-4 items-center border px-4 py-2 mt-4 rounded hover:bg-black hover:text-white transition-all duration-200"
+                                   className="md:text-lg text-sm flex gap-4 items-center border px-4 py-2 mt-4 rounded hover:bg-black hover:text-white transition-all duration-200"
                                    >
                                         Vamos conversar
                                         <MoveRight size={32} strokeWidth={1.5} />
